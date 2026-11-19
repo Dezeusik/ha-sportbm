@@ -1,0 +1,10 @@
+DOMAIN = "sportbm"
+BASE_URL = "https://app.sportbm.com/"
+CONF_EMAIL = "email"
+CONF_PASSWORD = "password"
+CONF_SCAN_MINUTES = "scan_minutes"
+DEFAULT_SCAN_MINUTES = 15
+MIN_SCAN_MINUTES = 10
+DAYS_AHEAD = 21
+EVENT_NOTIFICATION = "sportbm_powiadomienie"
+EVENT_MESSAGE = "sportbm_wiadomosc"

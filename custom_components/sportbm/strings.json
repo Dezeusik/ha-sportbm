@@ -1,0 +1,41 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "SportBM",
+        "description": "Dane logowania do app.sportbm.com (konto rodzica).\n\n{details}",
+        "data": {
+          "email": "E-mail",
+          "password": "Hasło",
+          "scan_minutes": "Odświeżanie co (min)"
+        }
+      },
+      "reauth_confirm": {
+        "title": "SportBM – podaj hasło ponownie",
+        "description": "{details}",
+        "data": {
+          "password": "Hasło"
+        }
+      }
+    },
+    "error": {
+      "auth": "Nieprawidłowy e-mail lub hasło – szczegóły nad formularzem",
+      "connect": "Nie udało się połączyć z SportBM – szczegóły nad formularzem"
+    },
+    "abort": {
+      "already_configured": "To konto jest już dodane",
+      "reauth_successful": "Hasło zaktualizowane"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "SportBM – ustawienia",
+        "description": "Jak często sprawdzać SportBM (minimum 10 minut).",
+        "data": {
+          "scan_minutes": "Odświeżanie co (min)"
+        }
+      }
+    }
+  }
+}
