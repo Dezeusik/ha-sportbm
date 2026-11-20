@@ -1,13 +1,17 @@
 {
   "domain": "sportbm",
   "name": "SportBM (klub sportowy)",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "documentation": "https://github.com/Dezeusik/ha-sportbm",
   "issue_tracker": "https://github.com/Dezeusik/ha-sportbm/issues",
-  "codeowners": ["@Dezeusik"],
+  "codeowners": [
+    "@Dezeusik"
+  ],
   "config_flow": true,
   "iot_class": "cloud_polling",
   "requirements": [],
   "dependencies": [],
-  "loggers": ["custom_components.sportbm"]
+  "loggers": [
+    "custom_components.sportbm"
+  ]
 }

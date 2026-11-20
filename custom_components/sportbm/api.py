@@ -35,7 +35,7 @@ class SportBMClient:
         hdr = {**HEADERS, "Content-Type": "application/json"}
         if self._csrf():
             hdr["X-CSRFToken"] = self._csrf()
-        async with self._s.post(BASE_URL + "api/v2/auth/login/", json={"email": self._email, "password": self._password},
+        async with self._s.post(BASE_URL + "api/v2/auth/login/", json={"username": self._email, "password": self._password},
                                 headers=hdr, timeout=aiohttp.ClientTimeout(total=30)) as r:
             text = await r.text()
             if r.status in (400, 401, 403):

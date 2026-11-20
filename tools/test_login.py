@@ -29,7 +29,7 @@ def call(method, path, body=None):
 
 email = sys.argv[1] if len(sys.argv) > 1 else input("E-mail: ")
 call("GET", "")
-s, d = call("POST", "api/v2/auth/login/", {"email": email.strip(), "password": getpass.getpass("Hasło do SportBM: ")})
+s, d = call("POST", "api/v2/auth/login/", {"username": email.strip(), "password": getpass.getpass("Hasło do SportBM: ")})
 print("Logowanie:", s, "" if s < 400 else d)
 if s >= 400:
     sys.exit(1)
